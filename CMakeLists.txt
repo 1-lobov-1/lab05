@@ -10,7 +10,7 @@ add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/googletest" "gtest")
 
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/banking)
 
-add_executable(RunTest ${CMAKE_CURRENT_SOURCE_DIR}/Tests/test.cpp)
+add_executable(RunTest ${CMAKE_CURRENT_SOURCE_DIR}/tests/tests.cpp)
 
 if (COVERAGE)
     target_compile_options(RunTest PRIVATE --coverage)
